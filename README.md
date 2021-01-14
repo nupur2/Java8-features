@@ -3,14 +3,23 @@
 Java 8 features 
 ----------------------------------------------------
 Lambda expression 
+
 Functional Interfaces
+
 Default method in interface
+
 states method in interface
+
 Predicate -Predefined functional interface
+
 Function -Predefined functional interface
+
 Consumer -Predefined functional interface
+
 Method reference and Constructor reference by :: Operator
+
 Streams
+
 Date and Time API (Joda.org)
 
 Need of Java8
