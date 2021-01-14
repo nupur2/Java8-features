@@ -255,3 +255,76 @@ Predicate<Integer> p = i -> i% 2==0;
 
 
 -------------------------------------------------------------------
+
+
+
+Suppliers -
+---------------------------------------------------------
+
+private someObject getValidationService(String param) {
+Optional<Object> Object1 = Object.of( param );
+Object Object = Object1
+.orElseThrow(supplyInvalidObjectError());
+return validationFactory.getValidationService(agencyRelation);
+}
+
+private Supplier<InvalidException> supplyInvalidObjectError() {
+return this::createInvalidObjectError;
+}
+
+private InvalidObjectException createInvalidObjectError() {
+
+return new InvalidObjectException(error);
+}
+--------------------------------------------------------------
+
+List<Long> existingIds = listObjects
+.stream()
+.filter(classObject -> Objects.nonNull(classObject.getId()))
+.map(class::getId)
+.collect(Collectors.toList());
+--------------------------------------------------------------------
+
+ newClass1ListObjects.stream().map(beanToObjects()).collect(Collectors.toList());
+ 
+ private Function<class1, class2> beanToObjects() {
+return obj -> {
+class2 class2Obj = new class2();
+class2Obj.setter(obj.getMethod);
+return obj;
+};
+}
+--------------------------------------------------------------------------------
+list.forEach(object -> createMethod(obj1,obj2));
+
+-----------------------------------------------------------------------------------
+
+StopWatch watch = new StopWatch();
+watch.start();
+watch.stop();
+DateTimeUtil.logWatch("complete", watch);
+
+Date currentDate = new Date(new java.util.Date().getTime());
+endDate.before(currentDate)
+
+DateTimeUtil.getDifferenceInMonthsBetweenDates(new java.util.Date(currentDate.getTime()),
+new java.util.Date(startDate.getTime())) > 12
+--------------------------------------------------------------------------------------
+Optional<Class> object = list.stream()
+.filter(obj -> ""
+.equals(obj.get()))
+.findFirst();
+---------------------------------------------------------------------------
+Class obj = new Class();
+obj.setValue1(list.stream().map(listObj -> getSomeMethods(listObj.getValue1())).collect(Collectors.toList()));
+obj.setValue2(Collections.max(obj, Comparator.comparing(class::getValue1)).getValue1());
+
+------------------------------------------------------------------------------
+
+lisClass.stream().map(this::getMethod).collect(Collectors.toList());
+
+private class getMethod(class2 obj2) {
+        class obj = new class();
+        obj.setValue1(obj2.value1);
+              return obj;
+    }
